@@ -17,29 +17,7 @@
 
 ## 1. PERT/CPM 圖
 mermaid
-graph TD
-    %% === 節點設定 ===
-    Start([開始]) --> T1[1. 研擬計畫<br/>1天]
-    T1 --> T2[2. 任務分配<br/>4天]
-    T1 --> T3[3. 取得硬體<br/>17天]
-    T2 --> T4[4. 程式開發<br/>70天]
-    T3 --> T5[5. 安裝硬體<br/>10天]
-    T4 --> T6[6. 程式測試<br/>30天]
-    T5 --> T7[7. 撰寫使用手冊<br/>25天]
-    T5 --> T8[8. 轉換檔案<br/>20天]
-    T6 --> T9[9. 系統測試<br/>25天]
-    T7 --> T10[10. 使用者訓練<br/>20天]
-    T8 --> T10
-    T9 --> T11[11. 使用者測試<br/>25天]
-    T10 --> T11
-    T11 --> End([結束])
-
-    %% === 關鍵路徑標註 ===
-    classDef critical fill:#ff4d4d,stroke:#333,stroke-width:3px,color:#fff
-    class T1,T2,T4,T6,T9,T11 critical
-
-    %% === 補充樣式 ===
-    linkStyle default stroke-width:2px,fill:none,stroke:#666
+graph TD Start([開始]) --> T1[1. 研擬計畫<br/>1天] T1 --> T2[2. 任務分配<br/>4天] T1 --> T3[3. 取得硬體<br/>17天] T2 --> T4[4. 程式開發<br/>70天] T3 --> T5[5. 安裝硬體<br/>10天] T4 --> T6[6. 程式測試<br/>30天] T5 --> T7[7. 撰寫使用手冊<br/>25天] T5 --> T8[8. 轉換檔案<br/>20天] T6 --> T9[9. 系統測試<br/>25天] T7 --> T10[10. 使用者訓練<br/>20天] T8 --> T10 T9 --> T11[11. 使用者測試<br/>25天] T10 --> T11 T11 --> End([結束]) classDef critical fill:#ff0000,stroke:#333,stroke-width:3px class T1,T2,T4,T6,T9,T11 critical
 
 
 ## 2. 甘特圖
