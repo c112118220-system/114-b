@@ -34,7 +34,7 @@ graph TD
     T10 --> T11
     T11 --> End([結束])
     
-    classDef critical fill:#ff9999,stroke:#333,stroke-width:3px
+    classDef critical fill:#fd1800stroke:#333,stroke-width:3px
     class T1,T2,T4,T6,T9,T11 critical
 ```
 
